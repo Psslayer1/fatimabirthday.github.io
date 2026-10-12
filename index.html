@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>happy birthday fatiii</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <!-- Star background -->
+    <div id="star-container"></div>
+
+    <!-- Main container -->
+    <div class="container">
+      <div class="left">
+        <h1 id="birthdayText">Happy Birthday!</h1>
+        <p class="sub" id="subText">
+          today is 10/12 and this date is now special to my heart , because its
+          the birthday of my soulmate , my queen and my everything
+        </p>
+        <p class="name-text" id="nameText"><strong>fatima la prema</strong></p>
+        <div class="bubble-container">
+          <div class="bubble">
+            <span id="ageTimer"></span>
+          </div>
+
+          <div class="bubble">
+            <span id="metTimer"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="profile-wrapper">
+          <img src="profile.jpg" class="profile-img" alt="Profile" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="buttons">
+      <button id="openBtn">Open The news📰</button>
+      <button id="musicBtn"></button>
+    </div>
+
+    <!-- Letter popup -->
+    <div class="letter-popup" id="letterModal" style="display: none">
+      <div class="letter-content">
+        <h2 id="modalTitle">Happy Birthday my queen 🎉</h2>
+        <p id="modalMessage">
+          my cutie pie , ik ik this website might not be the best , i havent
+          used programming languages for a while and i really suck at it but i
+          cant just leave you without a gift yk yk so this website is my gift
+          for you honey it has memories and times for us i love you so much babe
+          , never leave pls
+        </p>
+        <img class="news" src="news.png" />
+        <span class="close-letter" id="closeLetter">×</span>
+      </div>
+    </div>
+
+    <!-- Music -->
+    <audio id="music" src="happy-birthday.mp3"></audio>
+
+    <!-- JS -->
+    <script type="module" src="scripts.js"></script>
+
+    <div id="music-player">
+      <img id="song-image" src="" alt="Album Art" />
+      <div id="song-name">Song Title</div>
+      <div id="song-artist">Artist Name</div>
+
+      <input id="slider-song" type="range" value="0" min="0" step="0.1" />
+
+      <div id="music-buttons">
+        <i id="shuffle-song" class="fa-solid fa-shuffle"></i>
+        <i id="prev-song" class="fa-solid fa-backward-step fa-2x"></i>
+        <i id="playpause-song" class="fa-solid fa-circle-play fa-3x"></i>
+        <i id="next-song" class="fa-solid fa-forward-step fa-2x"></i>
+        <i id="repeat-song" class="fa-solid fa-repeat"></i>
+      </div>
+    </div>
+  </body>
+</html>
